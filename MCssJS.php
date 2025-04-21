@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Класс JSMCss — генератор JavaScript-кода для динамического управления CSS-классами элементов на странице.
+ * Класс MCssJS — генератор JavaScript-кода для динамического управления CSS-классами элементов на странице.
  *
  * Позволяет на основе текстового описания правил:
  * - Добавлять классы к элементам по тегам
@@ -35,7 +35,7 @@
  * $script = $jsManager->generateScript();
  * echo "<script>{$script}</script>";
  */
-class JSMCss
+class MCssJS
 {
     /** @var array<string, string> Классы для добавления по тегам */
     private array $stylesMap = [];
