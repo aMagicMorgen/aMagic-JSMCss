@@ -38,7 +38,7 @@
 class MCssJS
 {
     /** @var array<string, string> Классы для добавления по тегам */
-    private array $stylesMap = [];
+    private $stylesMap = [];
 
     /** @var array<string, string> Классы для замены по селекторам с классами */
     private array $replaceSelectors = [];
