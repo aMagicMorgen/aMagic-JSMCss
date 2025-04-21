@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Класс JSMCssStatic — статический менеджер CSS-классов.
+ * Класс MCssStatic — статический менеджер CSS-классов.
  * 
  * На основе текстовых правил и исходного HTML добавляет/заменяет классы в HTML-разметке.
  * Не использует JS, все классы подставляются на сервере.
  */
-class JSMCssStatic
+class MCss
 {
     private array $stylesMap = [];
     private array $replaceSelectors = [];
