@@ -8,9 +8,9 @@
  */
 class MCss
 {
-    private array $stylesMap = [];
-    private array $replaceSelectors = [];
-    private array $idSelectors = [];
+    private $stylesMap = [];
+    private $replaceSelectors = [];
+    private $idSelectors = [];
 
     /**
      * Конструктор парсит правила в формате JSMCss (!селекторы | классы)
