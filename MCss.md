@@ -46,10 +46,10 @@ rounded
  */
 class MCssJs
 {
-    private array $stylesMap = [];
-    private array $replaceSelectors = [];
-    private array $idSelectors = [];
-    private array $attrSelectors = [];
+    private $stylesMap = [];
+    private $replaceSelectors = [];
+    private $idSelectors = [];
+    private $attrSelectors = [];
 
     /**
      * Конструктор принимает весь текст стилей и парсит его
