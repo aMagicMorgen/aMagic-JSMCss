@@ -1,5 +1,5 @@
 я все подумал
- 1) и назвал class MCssJs
+ 1) и назвал class MCss
 2) всё-таки разделители должны быть такие как в файле css
 
 h1 .title #header {font-bold text-wrap:balance }
@@ -22,7 +22,7 @@ rounded
 <?php
 
 /**
- * Класс MCssJs — парсер кастомного CSS-подобного формата с классами внутри.
+ * Класс MCss — парсер кастомного CSS-подобного формата с классами внутри.
  *
  * Формат похож на CSS:
  * селекторы { классы }
@@ -44,7 +44,7 @@ rounded
  *
  * Генерирует JS-скрипт, который динамически добавляет/заменяет классы согласно правилам.
  */
-class MCssJs
+class MCss
 {
     private $stylesMap = [];
     private $replaceSelectors = [];
@@ -221,7 +221,7 @@ class MCssJs
 
 ```php
 <?php
-require_once 'MCssJs.php';
+require_once 'MCss.php';
 
 $styleText = <<<EOT
 /* Комментарии можно писать так и они будут удалены */
@@ -251,7 +251,7 @@ input[type=submit] {
 }
 EOT;
 
-$mc = new MCssJs($styleText);
+$mc = new MCss($styleText);
 $script = $mc->generateScript();
 ?>
 
