@@ -180,7 +180,7 @@ class JSMCss
 
 ```php
 <?php
-require_once 'JSMCss.php';
+require_once 'MCssJS.php';
 
 $styleString = <<<EOT
 !h1 .title #header | font-bold text-wrap:balance
@@ -188,7 +188,7 @@ $styleString = <<<EOT
 !#special | border-2 border-red-500 p-4
 EOT;
 
-$jsManager = new JSMCss($styleString);
+$jsManager = new MCssJS($styleString);
 $script = $jsManager->generateScript();
 ?>
 
